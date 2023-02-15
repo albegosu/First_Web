@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseñador Freelance</title>
+
+    <!--Prelod de Normalize para estilo uniforme entre diferentes navegadores-->
+    <link rel="preload" href="css/normalize.css" as="style" />
+
+    <!--Cargamos fuente de GoogleFont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Precarga de estilo genérico-->
+    <link rel="preload" href="css/styles.css" as="style" />
+
+    <!--Link a estilos de CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!--Comments HTML-->
+    <header>
+      <!--Agregamos etiqueta <span> para poder dar otro formato a Freelancer dentro del h1 !!!NO USAR <p>!!!-->
+      <h1 class="tittle">Alberto Glez. <span>Freelancer</span></h1>
+    </header>
+
+    <div class="nav-bg">
+      <!--Cuando aún no tenemos el enlace, ponemos "#"-->
+      <nav class="navegacion-principal contenedor">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mi</a>
+        <a href="#">Clientes</a>
+        <a href="#">Contactos</a>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="contenido-hero">
+        <h2>Diseño y Desarrollo Web</h2>
+        <p>
+          <!--Traemos el código del icono de Tabler Icons directamente-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-map-search"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffbf00"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v10" />
+            <path d="M9 4v13" />
+            <path d="M15 7v5" />
+            <circle cx="16.5" cy="17.5" r="2.5" />
+            <path d="M18.5 19.5l2.5 2.5" />
+          </svg>
+        </p>
+
+        <p>Gijón, Asturias, España.</p>
+
+        <a class="boton" href="#">Contactar</a>
+      </div>
+    </section>
+
+    <main class="sombra">
+      <h2>Mis Servicios</h2>
+
+      <div class="servicios">
+        <section class="servicio">
+          <h3>Diseño Web</h3>
+          <div class="icono">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-palette"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M12 21a9 9 0 1 1 0 -18a9 8 0 0 1 9 8a4.5 4 0 0 1 -4.5 4h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
+              />
+              <circle cx="7.5" cy="10.5" r=".5" fill="currentColor" />
+              <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+              <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
+            </svg>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            placeat facere sunt corporis nisi asperiores nemo natus velit quae,
+            perspiciatis cupiditate debitis reiciendis labore expedita delectus
+            at iste quo obcaecati!
+          </p>
+        </section>
+
+        <section class="servicio">
+          <h3>Aplicaciones Móviles</h3>
+          <div class="icono">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-apple"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 7c-3 0 -4 3 -4 5.5c0 3 2 7.5 4 7.5c1.088 -.046 1.679 -.5 3 -.5c1.312 0 1.5 .5 3 .5s4 -3 4 -5c-.028 -.01 -2.472 -.403 -2.5 -3c-.019 -2.17 2.416 -2.954 2.5 -3c-1.023 -1.492 -2.951 -1.963 -3.5 -2c-1.433 -.111 -2.83 1 -3.5 1c-.68 0 -1.9 -1 -3 -1z"
+              />
+              <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
+            </svg>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus
+            voluptatem quia quas ipsa voluptas, tempora esse quibusdam nihil
+            libero consequuntur vel officiis? Esse distinctio cupiditate enim
+            amet nostrum cum.
+          </p>
+        </section>
+
+        <section class="servicio">
+          <h3>E-Commerce</h3>
+          <div class="icono">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-credit-card"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="3" y="5" width="18" height="14" rx="3" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+              <line x1="7" y1="15" x2="7.01" y2="15" />
+              <line x1="11" y1="15" x2="13" y2="15" />
+            </svg>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem alias beatae eveniet. Earum porro temporibus,
+            reprehenderit tenetur exercitationem, iusto neque recusandae sunt
+            incidunt eveniet corrupti, praesentium voluptate magnam ratione
+            deleniti.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <section>
+      <h2>Contacto</h2>
+
+      <form class="formulario">
+        <fieldset>
+          <legend>Contáctanos llenando todos los campos</legend>
+          <div class="datos">
+            <div class="campo">
+              <label>Nombre</label>
+              <input type="text" placeholder="Tu Nombre" />
+            </div>
+
+            <div class="campo">
+              <label>Teléfono</label>
+              <input type="number" placeholder="Tu Teléfono" />
+            </div>
+
+            <div class="campo">
+              <label>Email</label>
+              <input type="email" placeholder="Tu email" />
+            </div>
+
+            <div class="campo">
+              <label>Mensaje</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <div class="enviar">
+                <input class="boton" type="submit" value="Enviar" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <p>Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
