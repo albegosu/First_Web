@@ -1,0 +1,242 @@
+/*por default colocamos estas líneas para html y body*/
+
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #ffc107;
+  --secundario: #0097a7;
+  --gris: #757575;
+  --grisclaro: #d6d6d6;
+}
+
+/* Globales */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /*Para restringir tamaño Box Model*/
+}
+*,
+*:before,
+*:after {
+  /*BOX MODEL*/
+  box-sizing: inherit; /*BOX MODEL*/
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto";
+  background-image: linear-gradient(
+    to top,
+    var(--grisclaro) 0%,
+    var(--blanco) 100%
+  ); /* Fondo degradado */
+}
+
+.sombra {
+  /*Nos traemos el codigo para el cuadro y sombra de CSS Matic*/
+  -webkit-box-shadow: 10px 10px 47px 0px rgb(255, 255, 255);
+  -moz-box-shadow: 10px 10px 47px 0px rgba(189, 189, 189, 1);
+  box-shadow: 10px 10px 47px 0px rgba(189, 189, 189, 1);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* Titulos */
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.tittle span {
+  font-size: 1rem;
+}
+
+/* Navegación */
+
+.nav-bg {
+  background-color: var(--secundario);
+}
+
+.contenedor {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.boton {
+  background-color: var(--secundario);
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+  border: none;
+}
+@media (min-width: 480px) {
+  .boton {
+    width: auto;
+  }
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*Centra el texto en formato vertical*/
+}
+
+/*Media Querie con css.json para hacer el diseño Responsive*/
+@media (min-width: 480px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/*La a hace la referencia únicamente a los enlaces definidos*/
+.navegacion-principal a {
+  padding: 1rem;
+  color: var(--blanco);
+  /*Con este none quitamos el subrayado de un enlace de navegacion*/
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+
+.hero {
+  background-image: url(../img/hero.jpg); /*usamos URL para traernos una imagen que está en otra carpeta*/
+  background-repeat: no-repeat; /*Para que no repita la imagen para rellenar todo el ancho de página*/
+  background-size: cover; /*Para (no repitiendo) ajustar imagen a ancho de página*/
+  height: 450px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.contenido-hero {
+  position: absolute;
+  background-color: rgb(
+    0 0 0 / 70%
+  ); /*Primero definimos código de color / porcentaje de opacidad del cuadro de color*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+  color: var(--blanco);
+}
+
+/* Servicios */
+
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*1 Fracción cada columna = 33.3%*/
+  /* grid-template-columns: repeat(3, 1fr);   Es el mismo codigo que arriba */
+  grid-template-rows: 50rem;
+  /* se puede usar solo GRID y definir todo en una linea */
+  column-gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .servicios {
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 1rem;
+  }
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio h3 {
+  color: var(--secundario);
+  font-weight: normal;
+}
+
+.servicio p {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.servicio .icono {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Contacto */
+
+.formulario {
+  background-color: var(--gris);
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primario);
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+
+.campo label{
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
+}
+
+.campo input {
+  border: none;
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.enviar .boton{
+  width: 100%;
+}
